@@ -1,0 +1,56 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+$font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;//字体
+$font-color: #fff;
+.header{
+  width: 100%;
+  background-color: #003366;
+  text-align: center;
+  font-family: $font-family;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.header-line{
+  height: 3px;
+  width: 100%;
+  border: 1px solid black;
+
+  %line{
+    width: 14%;
+    float: left;
+  }
+  .red{
+    @extend %line;
+    width: 15%;
+    background-color: red;
+  }
+  .blue{
+    @extend %line;
+    background-color: blue;
+  }
+  .yellow{
+    @extend %line;
+    background-color: yellow;
+  }
+  .green{
+    @extend %line;
+    background-color: green;
+  }
+  .orange{
+    @extend %line;
+    background-color: orange;
+  }
+  .pink{
+    @extend %line;
+    background-color: pink;
+  }
+  .purple{
+    @extend %line;
+    width: 15%;
+    background-color: purple;
+  }
+}

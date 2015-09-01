@@ -1,0 +1,41 @@
+/*
+Syntax error: Invalid CSS after "$font-family": expected ":", was ".header{"
+        on line 8 of screen.scss
+
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: $font-family
+8: .header{
+9: 
+10: }
+
+Backtrace:
+screen.scss:8
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1148:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1084:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1079:in `tok!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:511:in `variable'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:552:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:545:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:82:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:27:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:342:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:262:in `render'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `each'
+/usr/lib/ruby/vendor_ruby/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/plugin.rb:81:in `update_stylesheets'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:439:in `watch_or_update'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:326:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec.rb:21:in `parse!'
+/usr/bin/scss:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"$font-family\": expected \":\", was \".header{\"\A         on line 8 of screen.scss\A \A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: $font-family\A 8: .header{\A 9: \A 10: }"; }
